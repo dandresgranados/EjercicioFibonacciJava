@@ -1,14 +1,18 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
-import prueba1.Inicio;
 
 class FibonacciTest {
 
 	@Test
 	void test1() {
-		int result = Fibonacci.serieFibonacci(10);
-		assertEquals(1, result);	}
+		
+		List<Integer> lista = new ArrayList<Integer>();
+		lista = Fibonacci.serieFibonacci(10);
+		assertEquals(11, lista.size());	}
 
 }
