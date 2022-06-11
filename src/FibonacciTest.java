@@ -21,8 +21,20 @@ class FibonacciTest {
 		List<Integer> lista = new ArrayList<Integer>();
 		lista = Fibonacci.serieFibonacci(10);
 		assertEquals(10, lista.size());	}
+	@Test
+	void test3() {
+		
+		List<Integer> lista = new ArrayList<Integer>();
+		lista = Fibonacci.serieFibonacci(10);
+		assertEquals(13, lista.get(7));	}
 	
-	
+	@Test
+	void test4() {
+		
+		List<Integer> lista = new ArrayList<Integer>();
+		lista = Fibonacci.serieFibonacci(20);
+		assertEquals(13, lista.get(7));	}
+
 	
 
 }
